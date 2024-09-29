@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Diri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: rgb(39, 99, 142);
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-left: 150px;
+}
+
+.profile-img {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: 150px;
+}
+
+table {
+    width: 500px;
+    margin: 20px ;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-left: 150px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form {
+    margin: 20px ;
+    padding-left: 125px;
+}
+
+form div {
+    margin-bottom: 10px;
+    width: 300px;
+
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input {
+    padding: 8px;
+    width: calc(100% - 120px);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    text-decoration: none;
+    color: #0095f6;
+    margin-left: 150px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+video{
+    margin-left: 70px;
+    padding-left: 100px;
+}
+
+.header h2{
+    text-align: center;
+}
+
+.container p{
+    margin-left: 150px;
+}
+
+</style>
+<body>
+    <!-- Container untuk seluruh konten halaman -->
+    <div class="container">
+        <!-- Header dengan foto profil dan nama -->
+        <div class="header">
+            <div class="foto">
+                <!-- Gambar profil -->
+                <img src="WhatsApp Image 2024-09-28 at 18.14.30.jpeg" alt="Profile Picture" class="profile-img">
+            </div>
+            <div class="nama">
+                <center>
+                    <!-- Nama dan jurusan -->
+                    <h2>Rama Aulia Ramadan</h2>
+                    <h2>Teknologi Informasi</h2>
+                </center>
+            </div>
+        </div>
+
+        <!-- Bagian video profil -->
+        <h2>Video Profil</h2>
+        <video width="854" height="480" controls>
+            <source src="Gedagedigeda geda do.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <!-- Bagian "Tentang Saya" -->
+        <h2>Tentang Saya</h2>
+        <p>Halo! Saya adalah seorang pengembang web antusias dengan passion di bidang teknologi.</p>
+
+        <!-- Tabel keterampilan -->
+        <h2>Keterampilan</h2>
+        <table> 
+            <tr>
+                <th>Keterampilan</th>
+                <th>Tingkat</th>
+            </tr>
+            <tr>
+                <td>HTML & CSS</td>
+                <td>Mahir</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Pemula</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>Pemula</td>
+            </tr>
+        </table>
+
+        <!-- Formulir kontak -->
+        <h2>Hubungi Saya</h2>
+        <form action="#">
+            <div>
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="pesan">Pesan:</label> <br>
+                <textarea name="pesan" id="pesan"></textarea>
+            </div>
+            <button type="submit">Kirim</button>
+        </form>
+
+        <!-- Bagian footer dengan tautan media sosial -->
+        <div class="footer">
+            <h2>Sosial Media</h2>
+            <div class="Instagram">
+                <a href="https://www.instagram.com/ramangvrl/" target="_blank">Instagram</a>
+            </div>
+            <div class="LinkedIn">
+                <a href="https://www.linkedin.com/in/ramaauliar/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
